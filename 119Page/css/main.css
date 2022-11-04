@@ -59,7 +59,13 @@
  * # base style overrides
  *
  * ------------------------------------------------------------------- */
-html {
+
+ :root {
+    --blue: #00649c;
+    --teal: #2494a2;
+ }
+
+ html {
     font-size: 10px;
 }
 
@@ -75,12 +81,12 @@ html, body {
 
 body {
     background: #111111;
-    font-family: sansita, serif;
+    font-family: "lora-regular", serif;
     font-size: 1.7rem;
     font-style: normal;
     font-weight: normal;
     line-height: 1.765;
-    color: #3B4A43;
+    color: #757575;
     margin: 0;
     padding: 0;
 }
@@ -96,7 +102,7 @@ a {
 }
 
 a:hover, a:focus, a:active {
-    color: #f5f2f1;
+    color: var(--blue);
 }
 
 a:hover, a:active {
@@ -111,7 +117,7 @@ a:hover, a:active {
  * ------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, 
 .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-medium", sans-serif;
     color: #000000;
     font-style: normal;
     font-weight: normal;
@@ -186,7 +192,7 @@ p img {
 }
 
 p.lead {
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-regular", sans-serif;
     font-size: 2rem;
     font-weight: 300;
     line-height: 1.8;
@@ -208,11 +214,11 @@ em, i, strong, b {
 }
 
 em, i {
-    font-family: sansita, serif;
+    font-family: "lora-italic", serif;
 }
 
 strong, b {
-    font-family: sansita, serif;
+    font-family: "lora-bold", serif;
 }
 
 small {
@@ -232,14 +238,14 @@ blockquote:before {
     line-height: 0px;
     margin: 0;
     color: rgba(0, 0, 0, 0.25);
-    font-family: sansita;
+    font-family: arial, sans-serif;
     position: absolute;
     top: 3.6rem;
     left: 0;
 }
 
 blockquote p {
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-regular", sans-serif;
     padding: 0;
     font-size: 2.1rem;
     line-height: 1.857;
@@ -248,7 +254,7 @@ blockquote p {
 
 blockquote cite {
     display: block;
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-regular", sans-serif;
     font-size: 1.4rem;
     font-style: normal;
     line-height: 1.5;
@@ -272,7 +278,7 @@ abbr {
 }
 
 var, kbd, samp, code, pre {
-    font-family: sansita;
+    font-family: Consolas, "Andale Mono", Courier, "Courier New", monospace;
 }
 
 pre {
@@ -367,7 +373,7 @@ ul.disc li::before {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #F29901;
+    background: var(--blue);
     position: absolute;
     left: -17px;
     top: 11px;
@@ -376,7 +382,7 @@ ul.disc li::before {
 
 dt {
     margin: 0;
-    color: #F29901;
+    color: var(--blue);
 }
 
 dd {
@@ -425,7 +431,7 @@ table {
     border-width: 0;
     width: 100%;
     max-width: 100%;
-    font-family: sansita, serif;
+    font-family: "lora-regular", serif;
 }
 
 th, td {
@@ -436,7 +442,7 @@ th, td {
 
 th {
     color: #000000;
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-bold", sans-serif;
 }
 
 td {
@@ -502,7 +508,7 @@ form,
 }
 
 .pace .pace-progress {
-    background: #F29901;
+    background: var(--blue);
     position: fixed;
     z-index: 900;
     top: 0;
@@ -545,7 +551,7 @@ form,
 }
 
 .line-scale-pulse-out > div {
-    background-color: #F29901;
+    background-color: var(--blue);
     width: 4px;
     height: 35px;
     border-radius: 2px;
@@ -622,7 +628,7 @@ select {
     border: 0;
     outline: none;
     color: #333333;
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-light", sans-serif;
     font-size: 1.4rem;
     line-height: 3rem;
     max-width: 100%;
@@ -706,7 +712,7 @@ select:focus {
 }
 
 label, legend {
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-regular", sans-serif;
     font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: .9rem;
@@ -722,7 +728,7 @@ input[type="checkbox"], input[type="radio"] {
 label > .label-text {
     display: inline-block;
     margin-left: 1rem;
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-regular", sans-serif;
     font-weight: normal;
     line-height: inherit;
 }
@@ -772,7 +778,7 @@ textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-    -webkit-text-fill-color: #F29901;
+    -webkit-text-fill-color: var(--blue);
     transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -788,7 +794,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
     display: inline-block;
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-medium", sans-serif;
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
@@ -832,9 +838,9 @@ button.btn--primary,
 input[type="submit"].btn--primary,
 input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
-    background: #F29901;
-    border-color: #F29901;
-    color: #f5f2f1;
+    background: var(--blue);
+    border-color: var(--blue);
+    color: #FFFFFF;
 }
 
 .btn.btn--primary:hover,
@@ -847,8 +853,8 @@ button.btn--primary:focus,
 input[type="submit"].btn--primary:focus,
 input[type="reset"].btn--primary:focus,
 input[type="button"].btn--primary:focus {
-    background: #33a242;
-    border-color: #33a242;
+    background: var(--blue);
+    border-color: var(--blue);
 }
 
 
@@ -872,8 +878,8 @@ input[type="button"].btn--primary:focus {
 
 .btn--stroke, button.btn--stroke {
     background: transparent !important;
-    border: 0.2rem solid #F29901;
-    color: #F29901;
+    border: 0.2rem solid var(--blue);
+    color: var(--blue);
 }
 
 .btn--stroke:hover, button.btn--stroke:hover {
@@ -907,7 +913,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     position: relative;
     margin-bottom: 3rem;
     border-radius: 3px;
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-regular", sans-serif;
     font-size: 1.5rem;
     line-height: 1.6;
 }
@@ -956,7 +962,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     margin: 0;
     padding: 1.5rem .6rem 0 0;
     font-size: 8.4rem;
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-regular", sans-serif;
     font-weight: bold;
     line-height: 6rem;
     text-indent: 0;
@@ -1035,7 +1041,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     height: 1em;
     position: absolute;
     font-size: 10rem;
-    font-family: sansita, Sans-Serif;
+    font-family: Arial, Sans-Serif;
     color: rgba(0, 0, 0, 0.25);
 }
 
@@ -1094,21 +1100,21 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .stats-tabs li a {
     display: inline-block;
     font-size: 2.5rem;
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-regular", sans-serif;
     font-weight: bold;
     border: none;
     color: #000000;
 }
 
 .stats-tabs li a:hover {
-    color: #F29901;
+    color: var(--teal);
 }
 
 .stats-tabs li a em {
     display: block;
     margin: .6rem 0 0 0;
     font-size: 1.4rem;
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-regular", sans-serif;
     color: #828282;
 }
 
@@ -1134,7 +1140,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     position: absolute;
     left: 0;
     top: -3rem;
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-bold", sans-serif;
     color: #000000;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -1153,7 +1159,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     right: 0;
     top: -3.6rem;
     display: block;
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-regular", sans-serif;
     color: #FFFFFF;
     font-size: 1.1rem;
     line-height: 1;
@@ -1213,7 +1219,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ## display headings
  * ------------------------------------------------------------------- */
 .display-1 {
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-medium", sans-serif;
     font-size: 7.8rem;
     line-height: 1.25;
     color: #000000;
@@ -1221,11 +1227,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .display-1--light {
-    color: #FA855D;
+    color: #FFFFFF;
 }
 
 .display-2 {
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-medium", sans-serif;
     font-size: 5.2rem;
     line-height: 1.255;
     color: #000000;
@@ -1241,29 +1247,20 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .subhead {
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-bold", sans-serif;
     font-size: 1.7rem;
     line-height: 1.333;
     text-transform: uppercase;
     letter-spacing: .25rem;
-    color:#3B4A43;
+    color: var(--teal);
     margin-top: 0;
     margin-bottom: 0;
 }
 
 .subhead--dark {
-    color: #3B4A43;
+    color: #000000;
 }
 
-/* be styling for added founder section*/
-
-.founder {
-    background-color: #3b4a43;
-    color: #f5f2f1;
-    padding-top: 16.2rem;
-    padding-bottom: 9rem;
-    position: relative;
-}
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -1429,7 +1426,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .slick-slider .slick-dots li.slick-active button,
 .slick-slider .slick-dots li:hover button {
-    background: #F29901;
+    background: var(--teal);
 }
 
 
@@ -1479,7 +1476,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 /* ------------------------------------------------------------------- 
  * ## main navigation 
  * ------------------------------------------------------------------- */
-@media(max-width:780px ) {
+
+ @media(max-width:780px ) {
     .header-nav{
         width: 100%;
     }
@@ -1498,7 +1496,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .header-nav {
-    background: #FA855D;
+    background: var(--teal);
     color: rgba(255, 255, 255, 0.25);
     font-family: sansita, sans-serif;
     font-size: 1.3rem;
@@ -1532,14 +1530,14 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .header-nav h3 {
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-semibold", sans-serif;
     font-size: 11px;
     line-height: 1.5;
     text-transform: uppercase;
     letter-spacing: .25rem;
     margin-bottom: 4.8rem;
     margin-top: .9rem;
-    color: #3B4A43;
+    color: var(--teal);
 }
 
 .header-nav p {
@@ -1548,16 +1546,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .header-nav__content {
     position: relative;
-    list-style: none;
-    position: relative;
     left: 50px;
     opacity: 0;
     visibility: hidden;
 }
 
-
 .header-nav__list {
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-regular", sans-serif;
     font-size: 1.8rem;
     margin: 3.6rem 0 3rem 0;
     padding: 0 0 1.8rem 0;
@@ -1643,120 +1638,99 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 /* menu is open
  * ----------------------------------------------- */
-    .menu-is-open .header-nav {
-        -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-        transform: translateX(0);
-        visibility: visible;
-        -webkit-overflow-scrolling: touch;
-    }
+.menu-is-open .header-nav {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    visibility: visible;
+    -webkit-overflow-scrolling: touch;
+}
 
-    .menu-is-open .header-nav .header-nav__content {
-        opacity: 1;
-        visibility: visible;
-        -webkit-transition-property: all;
-        transition-property: all;
-        -webkit-transition-duration: 0.5s;
-        transition-duration: 0.5s;
-        -webkit-transition-timing-function: ease-in-out;
-        transition-timing-function: ease-in-out;
-        -webkit-transition-delay: 0.3s;
-        transition-delay: 0.3s;
-        left: 0;
-    }
+.menu-is-open .header-nav .header-nav__content {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    left: 0;
+}
+
+
 /* code to hide menu button & style nav bar on desktop view.  */
-    @media (min-width: 781px) {
-        .header-menu-toggle {
-            display: none;
-        }
-        
-        .s-header .desktop-header  {
-            display: flex;
-            color: #FA855D;
-            justify-content: space-around;
-            position: fixed;
-            width: 100%;
-            font-family: sansita, sans-serif;
-            font-size: 1.3rem;
-            line-height: 1.846;
-            padding: 3.6rem 3rem 3.6rem 3.6rem;
-            background: #FA855D;
-            padding: 0px;
-
-        }
-
-        .header-logo {
-            display: flex;
-            position: fixed;
-            top: 6%;
-        }
-        
-         .desktop-header_navlist {
-            display: flex;
-            justify-content: space-around;
-            font-family: sansita;
-            list-style: none;
-            padding: 10px 0px;
-            margin: 20px;
-            text-decoration: none;
-            font-size: 1.8rem;
-            gap: 3rem;
-        }
-
-         .smoothscroll{
-            color: #3B4A43;
-            margin: 15px 30px;
-            top: 50%;
-         }
-        /*
-        .s-header {
-            display: flex; 
-            background: #FA855D;
-            padding: 0px;
-            
-        }
-        */
-        /*
-        .header-nav__content {
-            display: none;
-            visibility: hidden;
-        }
-        
-        .header-nav__list {
-            display: flex; 
-            justify-content: center;
-        }
-
-        .header-nav__list li {
-            display: none;
-            visibility: hidden;
-        }
-        */
-        .header-nav__list a,
-        .header-nav__list a:visited {
-            color: #FFFFFF;
-            position: relative; 
-            margin: 0 15px;
-            text-decoration: none;
-            letter-spacing: 2px;
-        }
+@media (min-width: 781px) {
+    .header-menu-toggle {
+        display: none;
     }
+    
+    .s-header .desktop-header  {
+        display: flex;
+        color: var(--teal);
+        justify-content: space-around;
+        position: fixed;
+        width: 100%;
+        font-family: sansita, sans-serif;
+        font-size: 1.3rem;
+        line-height: 1.846;
+        padding: 3.6rem 3rem 3.6rem 3.6rem;
+        background: var(--teal);
+        padding: 0px;
+
+    }
+
+    .header-logo {
+        display: flex;
+        position: fixed;
+        top: 6%;
+    }
+    
+     .desktop-header_navlist {
+        display: flex;
+        justify-content: space-around;
+        font-family: sansita;
+        list-style: none;
+        padding: 10px 0px;
+        margin: 20px;
+        text-decoration: none;
+        font-size: 1.8rem;
+        gap: 3rem;
+    }
+
+     .smoothscroll{
+        color: #3B4A43;
+        margin: 15px 30px;
+        top: 50%;
+     }
+   
+    .header-nav__list a,
+    .header-nav__list a:visited {
+        color: #FFFFFF;
+        position: relative; 
+        margin: 0 15px;
+        text-decoration: none;
+        letter-spacing: 2px;
+    }
+}
 
 /* ------------------------------------------------------------------- 
  * ## mobile menu toggle 
  * ------------------------------------------------------------------- */
- .header-menu-toggle {
+.header-menu-toggle {
     position: fixed;
     right: 38px;
     top: 24px;
     height: 42px;
     width: 42px;
     line-height: 42px;
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-medium", sans-serif;
     font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    color: #F29901;
+    color: var(--teal);
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
@@ -1815,6 +1789,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .header-menu-icon::after {
     bottom: -9px;
 }
+
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -1892,11 +1867,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     padding-bottom: 15.6rem;
     position: relative;
     overflow: hidden;
-    
 }
 
 .home-content h3 {
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-medium", sans-serif;
     font-size: 1.6rem;
     color: rgba(255, 255, 255, 0.5);
     text-transform: uppercase;
@@ -1908,7 +1882,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content h1 {
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-medium", sans-serif;
     font-size: 6.3rem;
     line-height: 1.333;
     margin-top: 0;
@@ -1951,8 +1925,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     bottom: 8.4rem;
 }
 
+
 .home-content__scroll a {
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-semibold", sans-serif;
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
@@ -1964,8 +1939,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content__scroll a::before {
-    border-bottom: 2px solid #F29901;
-    border-right: 2px solid #F29901;
+    border-bottom: 2px solid var(--teal);
+    border-right: 2px solid var(--teal);
     content: '';
     display: block;
     height: 8px;
@@ -1989,7 +1964,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     display: block;
     width: 2px;
     height: 10.2rem;
-    background-color: #F29901;
+    background-color: var(--blue);
     position: absolute;
     right: 7.2rem;
     bottom: 0;
@@ -2000,7 +1975,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ## home social 
  * ------------------------------------------------------------------- */
 .home-social {
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-regular", sans-serif;
     list-style: none;
     margin: 0;
     position: absolute;
@@ -2049,7 +2024,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-social span {
-    color: #f5f2f1;
+    color: var(--blue);
     right: 4.5rem;
     font-size: 1.3rem;
     opacity: 0;
@@ -2305,7 +2280,7 @@ html.no-csstransitions .home-content__main {
 .s-about {
     padding-top: 16.2rem;
     padding-bottom: 9rem;
-    background-color: #d1e8d7;
+    background-color: var(--blue);
     color: #010507;
     position: relative;
 }
@@ -2321,9 +2296,6 @@ html.no-csstransitions .home-content__main {
     max-width: 1024px;
 }
 
-.founder-image {
-    border-radius: 8px;
-}
 
 /* ------------------------------------------------------------------- 
  * ## about stats
@@ -2346,10 +2318,10 @@ html.no-csstransitions .home-content__main {
 }
 
 .stats__count {
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-bold", sans-serif;
     font-size: 8.4rem;
     line-height: 1;
-    color: #3b4a43;
+    color: #FFFFFF;
     position: relative;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2357,7 +2329,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .stats h5 {
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-semibold", sans-serif;
     margin-top: 1.8rem;
     color: #000000;
     font-size: 1.8rem;
@@ -2479,7 +2451,7 @@ html.no-csstransitions .home-content__main {
     padding-top: 16.2rem;
     padding-bottom: 13.2rem;
     background-color: #FFFFFF;
-    color: #3B4A43;
+    color: #757575;
     position: relative;
 }
 
@@ -2513,11 +2485,10 @@ html.no-csstransitions .home-content__main {
 
 .services-list .service-icon {
     float: left;
-    color: #F29901;
+    color: var(--blue);
     font-size: 4.8rem;
     margin-top: -.6rem;
 }
-
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -2668,7 +2639,7 @@ html.no-csstransitions .home-content__main {
 
 .item-folio__thumb a::after {
     content: "+";
-    font-family: sansita, serif;
+    font-family: georgia, serif;
     font-size: 2.7rem;
     display: block;
     height: 30px;
@@ -2707,7 +2678,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .item-folio__title {
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-semibold", sans-serif;
     font-size: 1.4rem;
     line-height: 1.286;
     color: #FFFFFF;
@@ -2718,7 +2689,7 @@ html.no-csstransitions .home-content__main {
 
 .item-folio__cat {
     color: rgba(255, 255, 255, 0.5);
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-light", sans-serif;
     font-size: 1.4rem;
     line-height: 1.714;
     margin-bottom: 0;
@@ -2841,7 +2812,7 @@ html.no-csstransitions .home-content__main {
     padding-top: 16.2rem;
     padding-bottom: 16.8rem;
     background-color: #e6e6e6;
-    color: #3B4A43;
+    color: #757575;
     position: relative;
 }
 
@@ -2899,7 +2870,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .clients-testimonials .testimonials p {
-    font-family: sansita, serif;
+    font-family: "lora-regular", serif;
     font-size: 3rem;
     line-height: 1.8;
     color: #555555;
@@ -2923,12 +2894,12 @@ html.no-csstransitions .home-content__main {
 }
 
 .clients-testimonials .testimonials__name {
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-semibold", sans-serif;
     color: #000000;
 }
 
 .clients-testimonials .testimonials__pos {
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-light", sans-serif;
     font-size: 1.4rem;
 }
 
@@ -3071,7 +3042,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .s-contact .form-field label {
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-light", sans-serif;
     font-size: 1rem;
     line-height: 2.4rem;
     position: absolute;
@@ -3081,8 +3052,8 @@ html.no-csstransitions .home-content__main {
     letter-spacing: .1rem;
     padding: 0 2rem;
     margin: 0;
-    color: #f5f2f1;
-    background: #F29901;
+    color: #FFFFFF;
+    background: var(--blue);
 }
 
 .s-contact .form-field label::after {
@@ -3093,14 +3064,14 @@ html.no-csstransitions .home-content__main {
     margin-top: -6px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-right: 5px solid #F29901;
+    border-right: 5px solid var(--blue);
 }
 
 .contact__line {
     display: block;
     width: 2px;
     height: 20.4rem;
-    background-color: #F29901;
+    background-color: var(--blue);
     position: absolute;
     left: 50%;
     top: -10.2rem;
@@ -3113,7 +3084,7 @@ html.no-csstransitions .home-content__main {
     color: rgba(255, 255, 255, 0.4);
     padding-top: 6rem;
     padding-bottom: 6rem;
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-light", sans-serif;
     font-size: 1.5rem;
     line-height: 2;
     position: relative;
@@ -3127,13 +3098,8 @@ html.no-csstransitions .home-content__main {
 
 .contact-content h5 {
     margin-top: 0;
-    color: #F29901;
+    color: var(--blue);
 }
-
-option {
-    color: #3B4A43;
-}
-   
 
 .contact-content input[type="email"],
 .contact-content input[type="number"],
@@ -3159,7 +3125,7 @@ option {
 .contact-content textarea:focus,
 .contact-content select:focus {
     color: #FFFFFF;
-    border-bottom: 1px solid #F29901;
+    border-bottom: 1px solid var(--teal);
 }
 
 .contact-content button,
@@ -3250,7 +3216,7 @@ option {
 
 .contact-social li a:hover, 
 .contact-social li a:focus {
-    color: #F29901;
+    color: var(--blue);
 }
 
 .contact-social li:last-child {
@@ -3269,11 +3235,11 @@ option {
 }
 
 .message-warning {
-    color: #F29901;
+    color: #ff6163;
 }
 
 .message-success {
-    color: #F29901;
+    color: var(--blue);
 }
 
 .message-warning i, .message-success i {
@@ -3296,7 +3262,7 @@ option {
 
 .submit-loader .text-loader {
     display: none;
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-regular", sans-serif;
     font-size: 1.3rem;
     font-weight: bold;
     line-height: 1.846;
@@ -3445,7 +3411,7 @@ option {
  * ------------------------------------------------------------------- */
 footer {
     padding: 9rem 0 6rem;
-    font-family: sansita, sans-serif;
+    font-family: "montserrat-light", sans-serif;
     font-size: 15px;
     line-height: 2;
     text-align: center;
@@ -3465,7 +3431,7 @@ footer a {
 }
 
 footer a:hover, footer a:focus, footer a:active {
-    color: #F29901;
+    color: var(--blue);
 }
 
 footer .row {
@@ -3496,7 +3462,7 @@ footer .row {
     border: none;
     width: 85px;
     height: 28px;
-    background: url("../images/beenabledlogo.png") no-repeat center;
+    background: url("../images/logo-footer.png") no-repeat center;
     background-size: 85px 28px;
     font: 0/0 a;
     text-shadow: none;
@@ -3557,14 +3523,14 @@ footer .row {
     top: 0;
     right: 0;
     color: #FFFFFF;
-    background: #F29901;
-    border-color: #F29901;
+    background: var(--blue);
+    border-color: var(--blue);
     padding: 0 20px;
 }
 
 .footer-subscribe #mc-form label {
-    color: #f5f2f1;
-    font-family: sansita, sans-serif;
+    color: #FFFFFF;
+    font-family: "montserrat-regular", sans-serif;
     font-size: 1.3rem;
     padding: 0 2rem;
 }
