@@ -847,8 +847,8 @@ button.btn--primary:focus,
 input[type="submit"].btn--primary:focus,
 input[type="reset"].btn--primary:focus,
 input[type="button"].btn--primary:focus {
-    background: #33a242;
-    border-color: #33a242;
+    background: #ED521D;
+    border-color: #ED521D;
 }
 
 
@@ -2872,7 +2872,12 @@ html.no-csstransitions .home-content__main {
 /* ------------------------------------------------------------------- 
  * ## testimonials
  * ------------------------------------------------------------------- */
-.clients-testimonials {
+.clients {
+    display: flex;
+    justify-content: center;
+}
+
+ .clients-testimonials {
     margin-top: 4.2rem;
     padding-top: 7.2rem;
     text-align: center;
