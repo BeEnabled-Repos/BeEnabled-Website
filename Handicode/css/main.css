@@ -55,6 +55,11 @@
  * =================================================================== */
 
 
+:root {
+    --blue: #255D69;
+    --bluegray: #ABD6DF; 
+}
+
 /* ===================================================================
  * # base style overrides
  *
@@ -84,6 +89,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 
 
 /* ------------------------------------------------------------------- 
@@ -1447,6 +1453,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     position: absolute;
     margin: 0;
     padding: 0;
+    padding-bottom: 15px;
     left: 40px;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -1470,7 +1477,26 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 /* ------------------------------------------------------------------- 
  * ## main navigation 
  * ------------------------------------------------------------------- */
-.header-nav {
+
+ @media(max-width:780px ) {
+    .header-nav{
+        width: 100%;
+    }
+
+    /*hides desktop view navigation bar from mobile view*/
+    .desktop-header {
+        display: none;
+        visibility: hidden;
+    }
+
+    #desktop-view  {
+        display: none;
+        visibility: hidden;
+    }
+
+}
+
+ .header-nav {
     background: #0C0C0C;
     color: rgba(255, 255, 255, 0.25);
     font-family: "montserrat-light", sans-serif;
@@ -1634,6 +1660,62 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-transition-delay: 0.3s;
     transition-delay: 0.3s;
     left: 0;
+}
+
+
+/* code to hide menu button & style nav bar on desktop view.  */
+@media (min-width: 781px) {
+    .header-menu-toggle {
+        display: none;
+    }
+    
+    .s-header .desktop-header  {
+        display: flex;
+        color: #FA855D;
+        justify-content: space-around;
+        position: fixed;
+        width: 100%;
+        font-family: sansita, sans-serif;
+        font-size: 1.3rem;
+        line-height: 1.846;
+        padding: 3.6rem 3rem 3.6rem 3.6rem;
+        background: #abd6df;
+        padding: 0px;
+
+    }
+
+    .header-logo {
+        display: flex;
+        position: fixed;
+        top: 6%;
+    }
+    
+     .desktop-header_navlist {
+        display: flex;
+        justify-content: space-around;
+        font-family: sansita;
+        list-style: none;
+        padding: 10px 0px;
+        margin: 20px;
+        text-decoration: none;
+        font-size: 1.8rem;
+        gap: 3rem;
+    }
+
+     .smoothscroll{
+        color: #3B4A43;
+        margin: 15px 30px;
+        top: 50%;
+     }
+    
+    .header-nav__list a,
+    .header-nav__list a:visited {
+        color: #FFFFFF;
+        position: relative; 
+        margin: 0 15px;
+        text-decoration: none;
+        letter-spacing: 2px;
+    }
 }
 
 
@@ -2200,7 +2282,7 @@ html.no-csstransitions .home-content__main {
 .s-about {
     padding-top: 16.2rem;
     padding-bottom: 9rem;
-    background-color: #39b54a;
+    background-color: gray;
     color: #010507;
     position: relative;
 }
@@ -2215,6 +2297,60 @@ html.no-csstransitions .home-content__main {
     text-align: center;
     max-width: 1024px;
 }
+/* new stats div */
+
+.stats-div {
+   display: grid;
+   grid-template-columns: 20% 20% 20% 20% 20%;
+   grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.stat-div-img {
+   background-color: var(--blue);
+   justify-content: center;
+   border-radius: 50%;
+   padding: 20px;
+   margin: 5px;
+
+}
+
+.stats-text {
+    justify-content: center;
+}
+
+#div1{
+    height:300px;
+    width:300px;
+    background-color:var(--bluegray);
+    display: flex;
+    align-items: center;
+    grid-column-start: 1;
+    margin:0;
+    }
+#div2{
+    height:300px;
+    width:300px;
+    background-color: var(--bluegray);
+    grid-column-start: 2;
+   /* position:relative;
+    left:320px;
+    bottom:300px;*/
+    }
+ #div3{
+    height:300px;
+    width:300px;
+    background-color: var(--bluegray);
+    /*position:relative;
+    bottom:280px;*/
+    }
+#div4{
+    height:300px;
+    width:300px;
+    background-color: var(--bluegray);
+   /* position:relative;
+    left:320px;
+    bottom:580px; */
+    }
 
 
 /* ------------------------------------------------------------------- 
