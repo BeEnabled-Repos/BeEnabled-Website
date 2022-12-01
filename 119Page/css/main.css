@@ -2300,7 +2300,7 @@ html.no-csstransitions .home-content__main {
 }
 
 /* ------------------------------------------------------------------- 
- * ## Our Problem Section
+ * ## Our Story Section
  * ------------------------------------------------------------------- */
 .our-problem {
     font-family: Verdana, sans-serif;
@@ -2309,6 +2309,11 @@ html.no-csstransitions .home-content__main {
     background-color: white;
     color: #010507;
     position: relative;
+}
+
+.what-would-you-do {
+    border-radius: 30px;
+    padding: 0.5rem;
 }
 
 .bold {
@@ -2323,8 +2328,16 @@ html.no-csstransitions .home-content__main {
     padding-top: 6rem;
     padding-bottom: 9rem;
     background-color: var(--blue);
-    color: #010507;
+    color: white;
     position: relative;
+}
+
+.a-larger-problem-heading {
+    color: white;
+}
+
+.widespread-problem {
+    border-radius: 30px;
 }
 
 .dollar-sign {
@@ -2338,21 +2351,29 @@ html.no-csstransitions .home-content__main {
     white-space: nowrap;
 }
 
+.not-every-campaign {
+    padding-top: 6rem;
+}
+
+.not-every-attack {
+    border-radius: 30px;
+}
+
 /* ------------------------------------------------------------------- 
  * ## Our Solution Section
  * ------------------------------------------------------------------- */
 .our-solution {
     font-family: Verdana, sans-serif;
     padding-top: 6rem;
-    padding-bottom: 9rem;
+    padding-bottom: 3rem;
     background-color: white;
     color: #010507;
     position: relative;
 }
-  
+
 .emergency-and-bystanders {
     font-family: Verdana, sans-serif;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -2372,6 +2393,7 @@ html.no-csstransitions .home-content__main {
     grid-template-rows: auto auto;
     grid-row-gap: 16px;
     grid-column-gap: 16px;
+    padding-top: 3rem;
 }
 
 
@@ -2382,12 +2404,53 @@ html.no-csstransitions .home-content__main {
     grid-template-columns: 2fr 1fr;
 }
 
+.bystander-heading {
+    margin-top: 0;
+}
+
+.emergency-heading {
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+}
+
 .emergency-text {
     opacity: 0.6;
     font-size: 2rem;
 }
 .solution-image {
     border-radius: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+    .our-solution {
+        padding-bottom: 0.5rem;
+    }
+
+    .bystander-heading {
+        font-size: 2.5rem;
+    }
+
+    .emergency-and-bystanders {
+        font-family: Verdana, sans-serif;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr ;
+        grid-template-areas: 
+        "emergency-heading"
+        "solution-image1"
+        "solution-image2"
+        "solution-second-paragraph";
+    }
+
+    .emergency-heading {
+       padding-bottom: 0;
+    }
+
+    .solution-image {
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
 }
 
 
@@ -2425,7 +2488,7 @@ html.no-csstransitions .home-content__main {
 .stats h5 {
     font-family: Verdana, sans-serif;
     margin-top: 1.8rem;
-    color: #000000;
+    color: white;
     font-size: 1.8rem;
     line-height: 1.333;
     position: relative;
@@ -2543,7 +2606,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-services {
-    padding-top: 15px;
+    padding-top: 5px;
     padding-bottom: 13.2rem;
     background-color: #FFFFFF;
     color: #757575;
@@ -2555,7 +2618,7 @@ html.no-csstransitions .home-content__main {
  * ## services list
  * ------------------------------------------------------------------- */
 .services-list {
-    margin-top: 6rem;
+    margin-top: 3rem;
 }
 
 .services-list .service-item {
@@ -2615,7 +2678,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 800px) {
     .services-list {
-        margin-top: 4.2rem;
+        margin-top: 2.2rem;
         max-width: 500px;
         text-align: center;
     }
@@ -2638,7 +2701,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 600px) {
     .s-services {
-        padding-top: 12rem;
+        padding-top: 6rem;
     }
     .services-list .service-item:nth-child(n) {
         padding-right: 10px;
