@@ -3079,7 +3079,7 @@ html.no-csstransitions .home-content__main {
     font-family: sansita, sans-serif;
     font-size: 1rem;
     line-height: 2.4rem;
-    position: absolute;
+    position: absolute; 
     bottom: -0.3rem;
     right: .6rem;
     text-transform: uppercase;
