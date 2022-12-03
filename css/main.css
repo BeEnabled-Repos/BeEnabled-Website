@@ -2179,9 +2179,7 @@ html.no-csstransitions .home-content__main {
     .home-content h1 {
         font-size: 4.6rem;
     }
-    .home-content br {
-        display: none;
-    }
+   
     .home-content__main {
         padding-top: 21rem;
         padding-right: 80px;

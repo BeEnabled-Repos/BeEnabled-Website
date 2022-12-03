@@ -2431,16 +2431,13 @@ html.no-csstransitions .home-content__main {
     }
 
     .emergency-and-bystanders {
-        font-family: Verdana, sans-serif;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr ;
-        grid-template-areas: 
-        "emergency-heading"
-        "solution-image1"
-        "solution-image2"
-        "solution-second-paragraph";
+        display: flex;
+        flex-direction: column;
+    }
+
+    .emergency {
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .emergency-heading {
@@ -3393,8 +3390,8 @@ footer .row {
     outline: 0;
     border: none;
     width: 85px;
-    height: 28px;
-    background: url("../images/119-blueLogo.png") ;
+    height: 165px;
+    background: url("../images/119-blueLogo.png") no-repeat center;
     background-size: 85px 28px;
     font: 0/0 a;
     text-shadow: none;
